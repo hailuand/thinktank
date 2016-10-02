@@ -9,7 +9,12 @@
         <tr ng-repeat="movie in vm.movies">
             <td ng-bind="movie.title"></td>
             <td ng-bind="movie.length"></td>
-            <td ng-bind="movie.rating"></td>
+            <td>
+                <!-- movie.rating supplied as rating -->
+                <movie-rating value="movie.rating">
+                    <span class="glyphicon glyphicon-star"></span> <!-- Transclusion -->
+                </movie-rating>
+            </td>
             <td>
                 <div class="btn-group">
                     <button class="btn btn-default">
