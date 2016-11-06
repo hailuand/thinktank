@@ -1,0 +1,17 @@
+{
+  "name": "HelloWorld",
+  "homepage": "https://github.com/hailuand/thinktank",
+  "authors": [
+    "Andreas Hailu <hailuand@umich.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
