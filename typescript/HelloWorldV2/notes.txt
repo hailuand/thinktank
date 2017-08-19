@@ -14,7 +14,7 @@ JS with concepts such as the revealing module pattern, but it's still not so int
     - Pure Javascript, of course
     - Coffeescript
     - Dart
-- "TypeScript is a typed susperset of JavaScript that compiles to plain JavaScript." - www.typescriptlang.org
+- "TypeScript is a typed supderset of JavaScript that compiles to plain JavaScript." - www.typescriptlang.org
 
 --- Keywords ---
 - class: container for members such as properties and functions
