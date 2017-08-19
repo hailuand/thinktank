@@ -1,0 +1,3 @@
+-- Why use TypeScript?
+- JavaScript can feel like like a mess, and it's easy to write spaghetti code. You can write clean
+JS with concepts such as the revealing module pattern, but it's still not so intuitive.
