@@ -1,3 +1,39 @@
--- Why use TypeScript?
+--- Why use TypeScript? ---
 - JavaScript can feel like like a mess, and it's easy to write spaghetti code. You can write clean
 JS with concepts such as the revealing module pattern, but it's still not so intuitive.
+- JS provides a dynamic type system.
+- The GOOD:
+    -> Variables can hold any objects
+    -> Types determined on the fly
+    -> Implicit type coercion (e.g. string to number)
+- The BAD:
+    -> Difficult to ensure proper types are passed without tests
+    -> Not all devs use '==='
+    -> Enterprise-scale apps can have thousands of lines of code to maintain
+- There are alternatives to Typescript:
+    - Pure Javascript, of course
+    - Coffeescript
+    - Dart
+- "TypeScript is a typed susperset of JavaScript that compiles to plain JavaScript." - www.typescriptlang.org
+
+--- Keywords ---
+- class: container for members such as properties and functions
+- constructor: provides initializes functionality in a class
+- exports: export a member from a module
+- extends: extend a class or interface
+- imports: import a module
+- interface: defines code contract that can be implemented by types
+- module / namespace: container for classes and other code
+- public / private: member visibility modifiers
+- ...: rest parameter syntax
+- => arrow syntax used with definitions and functions
+- <typeName>: <> characters used to cast/convert between types
+':': separator between variable/parameter name and types
+
+--- Code Hierarchy ---
+         Module/Namespace
+Interface <- Class
+             Fields
+           Constructor
+           Properties
+            Functions
