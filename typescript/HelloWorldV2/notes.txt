@@ -37,3 +37,47 @@ Interface <- Class
            Constructor
            Properties
             Functions
+
+--- Typing, Variables, & Functions ---
+Type Inference:
+var num = 2; // Type-inferred to be 'number'. Will be checked against further more
+var num: number = 2; // Explicitly declared as type number
+var any1; // Type could be any type (of type 'any'- base class for all types!)
+var num1: number;
+var num4 = num3 + 100; // Since num3 is a number, num4 is inferred to be a number
+var str1 = num1 + ' some string'; // Type inference (string)
+var nothappy: number = num1 + ' some string'; // no bueno
+
+-- Ambient Declarations--
+- Allows us to pull in the tyes from external libraries
+declare var document;
+
+document.title = 'Hello';
+// lib.d.ts is reference by default and contains references for the DOM & JavaScript
+
+/// <reference path ="jquery.d.ts" />
+// Above is the ambient declaration for jquery
+
+declare var $; // Provide the $ symbol for jquery, types brought in from the above declarations
+var data = 'Hello Andreas';
+$('div').text(data);
+
+*.d.ts is the extension reserved for TypeScript ambient declaration files. You can get these from the
+DefinitelyTyped github project, or the TyeScript CodePlex webpage.
+
+-- Primitive Types --
+- 'any' is the base class for all types in TypeScript. It can hold any kind of type- using it is just like
+writing any normal object in dynamic JavaScript.
+- boolean
+- number (integers and floats)
+- string
+- arrays & indexers
+    -> var names: string[] = [ 'Andreas', 'Hailu' ];
+        var firstPerson: string;
+        firstPerson = names[0];
+- null
+    -> var num: number = null
+- undefined
+    -> var quantity: number; // undefined
+       var company = undefined; // of type 'any'
+    -> subtype of all types
