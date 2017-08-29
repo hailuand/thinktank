@@ -81,3 +81,38 @@ writing any normal object in dynamic JavaScript.
     -> var quantity: number; // undefined
        var company = undefined; // of type 'any'
     -> subtype of all types
+
+--- Object Types ---
+- Functions, cass, module, interface, and literal types
+- May contain:
+    -> Properties
+        -- public/private
+        -- required/optional
+    -> Call signatures
+    -> Constructor signatures
+    -> Index signatures
+var square = { h: 10, w: 20 };
+var points: Object = { x: 10, y: 20 };
+
+Functions are also considered objects
+var multiply = function (x: number) {
+    return x * x;
+}
+
+var multiplyMore: Function; // the function type has a capital 'F'.
+multipleMore = function (x: number) {
+};
+
+--- Functions ---
+- Parameter type (required and optional)
+- Arrow function expressions
+    -> Compact form of function expressions
+    -> Omit the function keyword
+    -> Have scope of "this"
+
+var myFunc = (h: number, w: number) => h * w; // Omit the function keyword, compact return statement
+
+- Void
+    -> Used as the return type for functions that return no value
+
+
