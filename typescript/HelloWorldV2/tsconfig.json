@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "suppressExcessPropertyErrors": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

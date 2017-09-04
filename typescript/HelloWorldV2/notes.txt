@@ -115,4 +115,49 @@ var myFunc = (h: number, w: number) => h * w; // Omit the function keyword, comp
 - Void
     -> Used as the return type for functions that return no value
 
+--- Classes ---
+class Car {
+    // Fields
+    // Constructor
+    // Properties
+    // Functions
+}
 
+class Car {
+    engine: string;
+
+    constructor(engine: string) {
+        this.engine = engine;
+    }
+
+    constructor(engine: string, public horsepower: int) { // 'public' field is the shorthand means of declaring fields
+        this.engine = engine;
+        this.horsepower = horsepower;
+    }
+}
+
+Class members are public by default
+Properties act as filters and can have get/set blocks
+E.g:
+
+Class Car {
+    private _engine: string;
+
+    constructor(engine: string) {
+        this.engine;
+    }
+
+    get engine(): string { // NOT A TYPO! TypeScript internally will create the getter
+        return this._engine;
+    }
+
+    set engine(value: string) {
+        if(!value) {
+            throw 'Must supply engine!';
+        }
+        this._engine = value;
+    }
+}
+
+Types are instantiated with the keyword "new"
+var car = new Car(engine);

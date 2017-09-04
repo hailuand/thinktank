@@ -8,10 +8,10 @@ module Functions {
   var helloWorld: (name?: string) => void;
   helloWorld = (name?: string) => {
     console.log('Hello ' + (name || ' unkown person)'));
-  }
+  };
 
   helloWorld();
-  helloWorld('John';)
+  helloWorld('John');
 
   var squareIt: (rect: { h: number, w?: number }) => number;
   var rectA = { h: 7 };
